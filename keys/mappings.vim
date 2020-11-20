@@ -23,12 +23,3 @@ inoremap <C-o> <ESC>O
 "Visual Mode Mappings
 vnoremap < <gv
 vnoremap > >gv
-
-"C++ Build System
-nnoremap <leader>b :w<CR> :vs<CR> :wincmd l<CR> :silent term g++ -std=c++17 -Wall -Wextra -O2 -Wshadow -Wconversion -DLOCAL -D_GLIBCXX_DEBUG -D_GLIBCXX_DEBUG_PEDANTIC "%" -o "%:r" && "%:r.exe"<CR>
-nnoremap <C-b> :w<CR> :vs<CR> :wincmd l<CR> :silent term g++ -std=c++17 -Wall -Wextra -O2 -Wshadow -Wconversion -DLOCAL -D_GLIBCXX_DEBUG -D_GLIBCXX_DEBUG_PEDANTIC "%" -o "%:r" && "%:r.exe"<CR>
-nnoremap <C-Space> :vs<CR> :wincmd l<CR> :term %:r.exe<CR>
-
-"Snippets
-nnoremap <leader>cpp :-1read ~/AppData/Local/nvim/snippets/main.cpp<CR>:w<CR>6jo
-nnoremap <leader>com :-1read ~/AppData/Local/nvim/snippets/template.cpp<CR>45j
