@@ -37,8 +37,8 @@ command! -nargs=0 CompileAndRun call TermWrapper(printf('g++ -std=c++17 -Wall -W
 command! -nargs=0 Run call TermWrapper(printf('a.exe'))
 autocmd FileType cpp nnoremap <leader>fj :w<CR> :CompileAndRun<CR>
 autocmd FileType cpp nnoremap <leader>fr :Run<CR>
-autocmd FileType cpp nnoremap <C-Space> :Run<CR>
+" autocmd FileType cpp nnoremap <C-Space> :Run<CR>
 
-nnoremap <leader>b :w<CR> :silent term g++ -std=c++17 -Wall -Wextra -O2 -Wshadow -Wconversion -DLOCAL -D_GLIBCXX_DEBUG -D_GLIBCXX_DEBUG_PEDANTIC "%" -o "%:r" && "%:r.exe"<CR>
-nnoremap <C-b> :w<CR> :vs<CR> :wincmd l<CR> :silent term g++ -std=c++17 -Wall -Wextra -O2 -Wshadow -Wconversion -DLOCAL -D_GLIBCXX_DEBUG -D_GLIBCXX_DEBUG_PEDANTIC "%" -o "%:r" && "%:r.exe"<CR>
-" nnoremap <C-Space> :vs<CR> :wincmd l<CR> :silent term %:r.exe<CR>
+nnoremap <silent> <leader>b :w<CR> :term g++ -std=c++17 -Wall -Wextra -O2 -Wshadow -Wconversion -DLOCAL -D_GLIBCXX_DEBUG -D_GLIBCXX_DEBUG_PEDANTIC "%" -o "%:r" && "%:r.exe"<CR>
+nnoremap <silent> <C-Space> :term %:r.exe<CR>
+" nnoremap <C-b> :w<CR> :vs<CR> :wincmd l<CR> :silent term g++ -std=c++17 -Wall -Wextra -O2 -Wshadow -Wconversion -DLOCAL -D_GLIBCXX_DEBUG -D_GLIBCXX_DEBUG_PEDANTIC "%" -o "%:r" && "%:r.exe"<CR>
