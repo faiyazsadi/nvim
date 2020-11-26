@@ -3,7 +3,7 @@ set background=dark         " tell vim what the background color looks like
 set nocompatible            " disable compatibility to old-time vi
 set showmatch               " show matching brackets.
 set matchtime=0
-"set path+=**
+set path+=**
 set ignorecase              " case insensitive matching
 set mouse=v                 " middle-click paste with mouse
 set smarttab                " Makes tabbing smarter will realize you have 2 vs 4
