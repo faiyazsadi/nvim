@@ -32,6 +32,8 @@ function! TermWrapper(command) abort
 	exec 'startinsert'
 endfunction
 
+:nnoremap <silent> <F8> :!start cmd /c "%:r:s,$,.exe," && pause<CR>
+
 " Build System
 command! -nargs=0 CompileAndRun call TermWrapper(printf('g++ -std=c++17 -Wall -Wextra -O2 -Wshadow -Wconversion -DLOCAL -D_GLIBCXX_DEBUG -D_GLIBCXX_DEBUG_PEDANTIC %s && a.exe', expand('%')))
 command! -nargs=0 Run call TermWrapper(printf('a.exe'))

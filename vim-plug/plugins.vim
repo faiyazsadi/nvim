@@ -7,6 +7,6 @@ Plug 'iCyMind/NeoSolarized'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 
-Plug 'Raimondi/delimitMate'
+Plug 'jiangmiao/auto-pairs'
 
 call plug#end()
