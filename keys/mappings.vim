@@ -22,7 +22,7 @@ nnoremap <silent> <space>i <S-s>
 nnoremap <silent> <C-t> :terminal<CR>
 
 "Insert Mode Mappings
-"inoremap <C-o> <ESC>O
+inoremap <C-o> <ESC>O
 "inoremap jj <Esc>
 
 "Visual Mode Mappings
