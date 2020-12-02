@@ -20,7 +20,7 @@ nnoremap <silent> <C-l> :wincmd l<CR>
 nnoremap <silent> <C-t> :terminal<CR>
 
 "Insert Mode Mappings
-inoremap <C-o> <ESC>O
+"inoremap <C-o> <ESC>O
 "inoremap jj <Esc>
 
 "Visual Mode Mappings
