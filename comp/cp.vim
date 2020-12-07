@@ -10,6 +10,9 @@ endif
 " important option that should already be set!
 set hidden
 
+let $CXX='g++'
+let $CXXFLAGS='-std=c++17 -Wall -Wextra -O2 -Wshadow -Wconversion -DLOCAL -D_GLIBCXX_DEBUG -D_GLIBCXX_DEBUG_PEDANTIC'
+
 " available options:
 " * let g:split_term_style = 'vertical'
 " * let g:split_term_resize_cmd = 'below vertical resize 40'
@@ -42,5 +45,7 @@ autocmd FileType cpp nnoremap <leader>fr :Run<CR>
 " autocmd FileType cpp nnoremap <C-Space> :Run<CR>
 
 nnoremap <silent> <leader>b :w<CR> :term g++ -std=c++17 -Wall -Wextra -O2 -Wshadow -Wconversion -DLOCAL -D_GLIBCXX_DEBUG -D_GLIBCXX_DEBUG_PEDANTIC "%" -o "%:r" && "%:r.exe"<CR>
+nnoremap <silent> <leader><space> :w<CR> :term g++ -std=c++17 -Wall -Wextra -O2 -Wshadow -Wconversion -DLOCAL -D_GLIBCXX_DEBUG -D_GLIBCXX_DEBUG_PEDANTIC "%" -o "%:r" && "%:r.exe"<CR>
 nnoremap <silent> <C-Space> :term %:r.exe<CR>
+nnoremap <silent> <space><space> :term %:r.exe<CR>
 " nnoremap <C-b> :w<CR> :vs<CR> :wincmd l<CR> :silent term g++ -std=c++17 -Wall -Wextra -O2 -Wshadow -Wconversion -DLOCAL -D_GLIBCXX_DEBUG -D_GLIBCXX_DEBUG_PEDANTIC "%" -o "%:r" && "%:r.exe"<CR>
