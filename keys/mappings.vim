@@ -5,7 +5,7 @@ autocmd TermOpen * startinsert
 nnoremap <leader>a :%y+<CR>:w<CR>
 nnoremap <leader>d :%d<CR>
 nnoremap <leader>s :w<CR>
-nnoremap <silent> <leader>nv :e $MYVIMRC<CR>
+nnoremap <silent> <leader>so :e $MYVIMRC<CR>
 
 nnoremap <C-s> :w<CR>
 nnoremap <C-f> :wq<CR>
@@ -18,6 +18,7 @@ nnoremap <silent> <C-h> :wincmd h<CR>
 nnoremap <silent> <C-l> :wincmd l<CR>
 nnoremap <silent> <space>i <S-s>
 nnoremap <silent> <leader>gn :bn<CR>
+nnoremap <silent> <space>t :terminal<CR>
 
 "Start Terminal
 nnoremap <silent> <C-t> :terminal<CR>
