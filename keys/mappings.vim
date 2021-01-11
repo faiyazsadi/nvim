@@ -2,9 +2,9 @@ let g:mapleader = ';'
 autocmd TermOpen * startinsert
 
 "Normal Mode Mappings
-nnoremap <leader>a :%y+<CR>:w<CR>
+nnoremap <leader>a :w<CR> :%y+<CR>
 nnoremap <leader>d :%d<CR>
-nnoremap <leader>s :w<CR>
+"nnoremap <leader>s :w<CR>
 nnoremap <silent> <leader>so :e $MYVIMRC<CR>
 
 nnoremap <C-s> :w<CR>
@@ -25,9 +25,10 @@ nnoremap <silent> <C-t> :terminal<CR>
 
 "Insert Mode Mappings
 inoremap <C-o> <ESC>O
-"inoremap jj <Esc>
 
 "Visual Mode Mappings
+vnoremap J :m '>+1<CR>gv=gv
+vnoremap K :m '<-2<CR>gv=gv
 vnoremap < <gv
 vnoremap > >gv
 

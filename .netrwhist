@@ -1,5 +1,6 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =6
+let g:netrw_dirhistcnt =7
+let g:netrw_dirhist_7='D:/'
 let g:netrw_dirhist_6='D:/Programming'
 let g:netrw_dirhist_5='D:/Programming/Codeforces Contests'
 let g:netrw_dirhist_4='D:/Programming'
