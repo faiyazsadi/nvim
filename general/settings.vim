@@ -1,4 +1,5 @@
 syntax on                   " syntax highlighting
+colorscheme gruvbox8_soft
 set number                  " add line numbers
 set relativenumber
 set hidden

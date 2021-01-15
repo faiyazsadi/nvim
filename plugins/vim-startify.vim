@@ -9,5 +9,5 @@ let g:startify_lists = [
       \ { 'header': ['   MRU'],            'type': 'files' },
       \ { 'header': ['   MRU '. getcwd()], 'type': 'dir' },
       \ ]
-let g:startify_fortune_use_unicode = 1
+let g:startify_fortune_use_unicode = 0
 nnoremap <C-n> :Startify<CR>
