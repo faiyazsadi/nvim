@@ -19,6 +19,8 @@ nnoremap <silent> <C-l> :wincmd l<CR>
 nnoremap <silent> <space>i <S-s>
 nnoremap <silent> <leader>gn :bn<CR>
 nnoremap <silent> <space>t :terminal<CR>
+nnoremap <C-p> :Files<CR>
+nnoremap <C-b> :Buffers<CR>
 
 "Start Terminal
 nnoremap <silent> <C-t> :terminal<CR>
