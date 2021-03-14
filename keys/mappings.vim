@@ -2,8 +2,9 @@ let g:mapleader = ';'
 autocmd TermOpen * startinsert
 
 "Normal Mode Mappings
-nnoremap <leader>a :w<CR> :%y+<CR>
-nnoremap <leader>d :%d<CR>
+nnoremap <leader>ca :w<CR> :%y+<CR>
+nnoremap <leader>da :%d<CR>
+nnoremap <leader>dv "_dd
 "nnoremap <leader>s :w<CR>
 nnoremap <silent> <leader>so :e $MYVIMRC<CR>
 
