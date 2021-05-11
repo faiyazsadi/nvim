@@ -13,11 +13,12 @@ nnoremap <C-f> :wq<CR>
 nnoremap <C-q> :q!<CR>
 
 "Split Screen Navigation
+nnoremap <silent> <leader>sp :vsp<CR>
 nnoremap <silent> <C-k> :wincmd k<CR>
 nnoremap <silent> <C-j> :wincmd j<CR>
 nnoremap <silent> <C-h> :wincmd h<CR>
 nnoremap <silent> <C-l> :wincmd l<CR>
-nnoremap <silent> <space>i <S-s>
+nnoremap <silent> <S-i> <S-s>
 nnoremap <silent> <leader>gn :bn<CR>
 nnoremap <silent> <space>t :terminal<CR>
 nnoremap <C-p> :Files<CR>

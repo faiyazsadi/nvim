@@ -6,6 +6,7 @@ set hidden
 set nowrap
 set noswapfile
 set nobackup
+set splitright
 set incsearch
 set scrolloff=8
 set background=dark         " tell vim what the background color looks like
