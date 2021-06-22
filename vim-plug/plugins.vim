@@ -16,4 +16,6 @@ Plug 'junegunn/fzf.vim'
 Plug 'mhinz/vim-startify'
 Plug 'voldikss/vim-floaterm'
 
+Plug 'chriskempson/base16-vim'
+
 call plug#end()

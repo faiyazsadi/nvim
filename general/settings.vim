@@ -1,5 +1,7 @@
 syntax on                   " syntax highlighting
 colorscheme gruvbox8_soft
+set termguicolors
+let base16colorspace=256
 set number                  " add line numbers
 set relativenumber
 set hidden
