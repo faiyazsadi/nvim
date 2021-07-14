@@ -11,7 +11,7 @@ endif
 set hidden
 
 let $CXX='g++'
-let $CXXFLAGS='-std=c++17 -Wall -Wextra -Wshadow -Wconversion -DLOCAL -D_GLIBCXX_DEBUG -D_GLIBCXX_DEBUG_PEDANTIC'
+let $CXXFLAGS='-std=c++20 -Wall -Wextra -Wshadow -Wconversion -DLOCAL -D_GLIBCXX_DEBUG -D_GLIBCXX_DEBUG_PEDANTIC'
 
 " available options:
 " * let g:split_term_style = 'vertical'
@@ -38,14 +38,18 @@ endfunction
 :nnoremap <silent> <F8> :!start cmd /c "%:r:s,$,.exe," && pause<CR>
 
 " Build System
-command! -nargs=0 CompileAndRun call TermWrapper(printf('g++ -std=c++17 -Wall -Wextra -Wshadow -Wconversion -DLOCAL -D_GLIBCXX_DEBUG -D_GLIBCXX_DEBUG_PEDANTIC %s && a.exe', expand('%')))
+command! -nargs=0 CompileAndRun call TermWrapper(printf('g++ -std=c++20 -Wall -Wextra -Wshadow -Wconversion -DLOCAL -D_GLIBCXX_DEBUG -D_GLIBCXX_DEBUG_PEDANTIC %s && a.exe', expand('%')))
 command! -nargs=0 Run call TermWrapper(printf('a.exe'))
 autocmd FileType cpp nnoremap <leader>fj :w<CR> :CompileAndRun<CR>
 autocmd FileType cpp nnoremap <leader>fr :Run<CR>
 " autocmd FileType cpp nnoremap <C-Space> :Run<CR>
 
-nnoremap <silent> <leader>b :w<CR> :term g++ -std=c++17 -Wall -Wextra -Wshadow -Wconversion -DLOCAL -D_GLIBCXX_DEBUG -D_GLIBCXX_DEBUG_PEDANTIC "%" -o "%:r" && "%:r.exe"<CR>
-nnoremap <silent> <leader><space> :w<CR> :term g++ -std=c++17 -Wall -Wextra -Wshadow -Wconversion -DLOCAL -D_GLIBCXX_DEBUG -D_GLIBCXX_DEBUG_PEDANTIC "%" -o "%:r" && "%:r.exe"<CR>
-nnoremap <silent> <C-Space> :term %:r.exe<CR>
-nnoremap <silent> <space><space> :term %:r.exe<CR>
-" nnoremap <C-b> :w<CR> :vs<CR> :wincmd l<CR> :silent term g++ -std=c++17 -Wall -Wextra -O2 -Wshadow -Wconversion -DLOCAL -D_GLIBCXX_DEBUG -D_GLIBCXX_DEBUG_PEDANTIC "%" -o "%:r" && "%:r.exe"<CR>
+" CPP Compilation options.
+autocmd Filetype cpp nnoremap <silent> <leader>b :w<CR> :term g++ -std=c++17 -Wall -Wextra -Wshadow -Wconversion -DLOCAL -D_GLIBCXX_DEBUG -D_GLIBCXX_DEBUG_PEDANTIC "%" -o "%:r" && "%:r.exe"<CR>
+autocmd Filetype cpp nnoremap <silent> <leader><space> :w<CR> :term g++ -std=c++17 -Wall -Wextra -Wshadow -Wconversion -DLOCAL -D_GLIBCXX_DEBUG -D_GLIBCXX_DEBUG_PEDANTIC "%" -o "%:r" && "%:r.exe"<CR>
+autocmd Filetype cpp nnoremap <silent> <C-Space> :term "%:r.exe"<CR>
+autocmd Filetype cpp nnoremap <silent> <space><space> :term "%:r.exe"<CR>
+
+" C compilation options.
+autocmd Filetype c nnoremap <silent> <leader><space> :w<CR> :term gcc -std=c17 -Wall -Wextra -Wshadow -Wconversion -DLOCAL "%" -o "%:r" && "%:r.exe"<CR>
+autocmd Filetype c nnoremap <silent> <space><space> :term "%:r.exe"<CR>

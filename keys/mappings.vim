@@ -7,6 +7,7 @@ nnoremap <leader>da :%d<CR>
 nnoremap <leader>dv "_dd
 "nnoremap <leader>s :w<CR>
 nnoremap <silent> <leader>so :e $MYVIMRC<CR>
+nnoremap <leader>co ^i//<ESC>
 
 nnoremap <C-s> :w<CR>
 nnoremap <C-f> :wq<CR>
