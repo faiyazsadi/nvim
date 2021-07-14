@@ -40,3 +40,10 @@ vnoremap > >gv
 
 "Terminal Mode Mappings
 tnoremap <Esc> <C-\><C-n>
+
+"Turn off relative numbering in Insert Mode.
+"augroup every
+"  autocmd!
+"  au InsertEnter * set norelativenumber
+"  au InsertLeave * set relativenumber
+"augroup END
