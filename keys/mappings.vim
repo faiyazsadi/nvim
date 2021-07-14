@@ -12,6 +12,7 @@ nnoremap <leader>co ^i//<ESC>
 nnoremap <C-s> :w<CR>
 nnoremap <C-f> :wq<CR>
 nnoremap <C-q> :q!<CR>
+nnoremap <C-w> :bd<CR>
 
 "Split Screen Navigation
 nnoremap <silent> <leader>sp :vsp<CR>
