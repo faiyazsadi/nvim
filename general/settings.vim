@@ -24,6 +24,7 @@ set expandtab               " Converts tabs to spaces
 set smartindent             " Makes indenting smart
 set autoindent              " Good auto indent
 set cursorline              " Enable highlighting of the current line
+"set guicursor=i:block       " Cursor is block shape
 set showtabline=2           " Always show tabs
 set cmdheight=2             " More space for displaying messages
 set clipboard=unnamedplus   " Copy paste between vim and everything else

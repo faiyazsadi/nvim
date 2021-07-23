@@ -1,15 +1,15 @@
 "Snippets
-nnoremap <leader>cpp :-1read ~/AppData/Local/nvim/snippets/main.cpp<CR>:w<CR>11jo
-nnoremap <leader>com :-1read ~/AppData/Local/nvim/snippet/template.cpp<CR>45j
+nnoremap <leader>cpp :-1read ~\\AppData\\Local\\nvim\\snippets\\main.cpp<CR>:w<CR>12jI
+nnoremap <leader>com :-1read ~\\AppData\\Local\\nvim\\snippet\\template.cpp<CR>45j
 
-"Auto-commands for new C File.
-augroup c17
+augroup templates
   autocmd!
-  au BufNewFile,BufRead *.c 0r ~/AppData/Local/nvim/snippets/main.c
-augroup END
+  autocmd BufNewFile,BufRead *.cpp call s:ApplyTemplate()
 
-"Auto-commands for new CPP File.
-augroup cpp
-  autocmd!
-  au BufNewFile,BufRead *.cpp 0r ~/AppData/Local/nvim/snippets/main.cpp
+  function! s:ApplyTemplate()
+    if getfsize(expand('%')) == 0
+      execute "-1r ~\\AppData\\Local\\nvim\\snippets\\main." . expand('%:e')
+      execute "%s/__CLASS_NAME__/" . expand('%:t:r') . "/e"
+    endif
+  endfun
 augroup END

@@ -7,7 +7,12 @@ nnoremap <leader>da :%d<CR>
 nnoremap <leader>dv "_dd
 "nnoremap <leader>s :w<CR>
 nnoremap <silent> <leader>so :e $MYVIMRC<CR>
-nnoremap <leader>co ^i//<ESC>
+"vnoremap <leader>cc 0i//<ESC>
+"vnoremap <leader>co 0xx<ESC>
+
+"Commenting Code
+vnoremap <leader>cc :norm i//<CR>
+vnoremap <leader>co :norm xx<CR>
 
 nnoremap <C-s> :w<CR>
 nnoremap <C-f> :wq<CR>
