@@ -18,4 +18,6 @@ Plug 'voldikss/vim-floaterm'
 
 Plug 'chriskempson/base16-vim'
 
+Plug 'bfrg/vim-cpp-modern'
+
 call plug#end()
