@@ -1,5 +1,5 @@
 "Snippets
-nnoremap <leader>cpp :-1read ~\\AppData\\Local\\nvim\\snippets\\main.cpp<CR>:w<CR>12jI
+nnoremap <leader>cpp :-1read ~\\AppData\\Local\\nvim\\snippets\\main.cpp<CR>:w<CR>11jo
 nnoremap <leader>com :-1read ~\\AppData\\Local\\nvim\\snippet\\template.cpp<CR>45j
 
 augroup templates
@@ -8,7 +8,7 @@ augroup templates
 
   function! s:ApplyTemplate()
     if getfsize(expand('%')) == 0
-      execute "-1r ~\\AppData\\Local\\nvim\\snippets\\main." . expand('%:e')
+      execute "-1read ~\\AppData\\Local\\nvim\\snippets\\main." . expand('%:e')
       execute "%s/__CLASS_NAME__/" . expand('%:t:r') . "/e"
     endif
   endfun

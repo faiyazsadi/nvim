@@ -1,5 +1,6 @@
 syntax on                   " syntax highlighting
-colorscheme gruvbox8_soft
+"colorscheme gruvbox8_soft
+colorscheme gruvbox8
 set termguicolors
 let base16colorspace=256
 set number                  " add line numbers
@@ -39,4 +40,5 @@ set wildmode=longest,list   " get bash-like tab completions
 
 filetype plugin indent on   " allows auto-indenting depending on file type
 
+autocmd BufWritePre * :%s/\s\+$//e "removes trailing whitespaces.
 au! BufWritePost $MYVIMRC source %      " auto source when writing to init.vm alternatively you can run :source $MYVIMRC
