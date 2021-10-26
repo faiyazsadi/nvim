@@ -46,9 +46,10 @@ autocmd FileType cpp nnoremap <leader>fr :Run<CR>
 
 " CPP Compilation options.
 autocmd Filetype cpp nnoremap <silent> <leader>b :w<CR> :term g++ -std=c++20 -Wall -Wextra -Wshadow -Wconversion -DLOCAL -D_GLIBCXX_DEBUG -D_GLIBCXX_DEBUG_PEDANTIC "%" -o "%:r" && "%:r.exe"<CR>
-autocmd Filetype cpp nnoremap <silent> <leader><space> :w<CR> :term g++ -std=c++20 -Wall -Wextra -Wshadow -Wconversion -DLOCAL -D_GLIBCXX_DEBUG -D_GLIBCXX_DEBUG_PEDANTIC "%" -o "%:r" && "%:r.exe"<CR>
+"autocmd Filetype cpp nnoremap <silent> <leader><space> :w<CR> :term g++ -std=c++20 -Wall -Wextra -Wshadow -Wconversion -DLOCAL -D_GLIBCXX_DEBUG -D_GLIBCXX_DEBUG_PEDANTIC "%" -o "%:r" && "%:r.exe"<CR>
 autocmd Filetype cpp nnoremap <silent> <C-Space> :term "%:r.exe"<CR>
 autocmd Filetype cpp nnoremap <silent> <space><space> :term "%:r.exe"<CR>
+autocmd Filetype cpp nnoremap <silent> <leader><space> :w<CR> :call Close_quickfix_list()<CR> :silent make<CR> :call Get_quickfix_list_size()<CR>
 
 " C compilation options.
 autocmd Filetype c nnoremap <silent> <leader><space> :w<CR> :term gcc -std=c17 -Wall -Wextra -Wshadow -Wconversion -DLOCAL "%" -o "%:r" && "%:r.exe"<CR>

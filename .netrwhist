@@ -1,12 +1,12 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =4
+let g:netrw_dirhistcnt =5
+let g:netrw_dirhist_5='C:/Users/USER/AppData/Local/nvim'
 let g:netrw_dirhist_4='C:/Users/USER/AppData/Local/nvim/comp'
 let g:netrw_dirhist_3='C:/Users/USER/AppData/Local/nvim'
 let g:netrw_dirhist_2='C:/Users/USER/AppData/Local/nvim/comp'
 let g:netrw_dirhist_1='C:/Users/USER/AppData/Local/nvim'
 let g:netrw_dirhist_0='C:/Users/USER/AppData/Local/nvim/comp'
 let g:netrw_dirhist_9='C:/Users/USER/AppData/Local/nvim'
-let g:netrw_dirhist_8='C:/Users/USER/AppData/Local/nvim/comp'
+let g:netrw_dirhist_8='C:/Users/USER/AppData/Local/nvim/lua'
 let g:netrw_dirhist_7='C:/Users/USER/AppData/Local/nvim'
 let g:netrw_dirhist_6='C:/Users/USER/AppData/Local/nvim/comp'
-let g:netrw_dirhist_5='C:/Users/USER/AppData/Local/nvim'
