@@ -30,7 +30,9 @@ nnoremap <silent> <leader>gn :bn<CR>
 nnoremap <silent> <space>t :terminal<CR>
 nnoremap <C-p> :Files<CR>
 nnoremap <C-b> :Buffers<CR>
-nnoremap <silent> <leader>fa :copen<CR>
+nnoremap <silent> <leader>fo :copen<CR>
+nnoremap <silent> <leader>fa :cclose<CR>
+nnoremap <silent> <leader>fn :cnext<CR>
 
 "Start Terminal
 nnoremap <silent> <C-t> :terminal<CR>
