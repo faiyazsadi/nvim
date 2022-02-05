@@ -1,5 +1,6 @@
 let g:startify_bookmarks = [
   \ { 'r': '~\AppData\Local\nvim\init.vim' },
+  \ { 'y': '~\AppData\Roaming\alacritty\alacritty.yml' },
   \ { 'o': 'D:\Programming\CF.cpp' },
   \ { 'a': 'D:\Programming\AtCoder.cpp' },
   \ ]

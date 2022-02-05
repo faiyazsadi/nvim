@@ -10,6 +10,9 @@ nnoremap <silent> <leader>so :e $MYVIMRC<CR>
 "vnoremap <leader>cc 0i//<ESC>
 "vnoremap <leader>co 0xx<ESC>
 
+"Netrw Explore
+nnoremap <leader>ex :Vexplore<CR>
+
 "Commenting Code
 vnoremap <leader>cc :norm i//<CR>
 vnoremap <leader>co :norm xx<CR>
@@ -30,6 +33,8 @@ nnoremap <silent> <leader>gn :bn<CR>
 nnoremap <silent> <space>t :terminal<CR>
 nnoremap <C-p> :Files<CR>
 nnoremap <C-b> :Buffers<CR>
+
+"Quickfix
 nnoremap <silent> <leader>fo :copen<CR>
 nnoremap <silent> <leader>fa :cclose<CR>
 nnoremap <silent> <leader>fn :cnext<CR>

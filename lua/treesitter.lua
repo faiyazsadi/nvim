@@ -1,4 +1,4 @@
-require 'nvim-treesitter.install'.compilers = { "clang", "gcc" }
+require 'nvim-treesitter.install'.compilers = { "clang" }
 require'nvim-treesitter.configs'.setup {
   ensure_installed = { "c", "cpp" }, -- one of "all", "maintained" (parsers with maintainers), or a list of languages
   ignore_install = { "javascript" }, -- List of parsers to ignore installing
