@@ -12,6 +12,7 @@ nnoremap <silent> <leader>so :e $MYVIMRC<CR>
 
 "Netrw Explore
 nnoremap <leader>ex :Vexplore<CR>
+nnoremap <F4> :Vexplore<CR>
 
 "Commenting Code
 vnoremap <leader>cc :norm i//<CR>
@@ -30,7 +31,6 @@ nnoremap <silent> <C-h> :wincmd h<CR>
 nnoremap <silent> <C-l> :wincmd l<CR>
 nnoremap <silent> <S-i> <S-s>
 nnoremap <silent> <leader>gn :bn<CR>
-nnoremap <silent> <space>t :terminal<CR>
 nnoremap <C-p> :Files<CR>
 nnoremap <C-b> :Buffers<CR>
 
@@ -40,7 +40,8 @@ nnoremap <silent> <leader>fa :cclose<CR>
 nnoremap <silent> <leader>fn :cnext<CR>
 
 "Start Terminal
-nnoremap <silent> <C-t> :terminal<CR>
+nnoremap <silent> <space>t :terminal<CR>
+"nnoremap <silent> <C-t> :terminal<CR>
 
 "Insert Mode Mappings
 inoremap <C-o> <ESC>O

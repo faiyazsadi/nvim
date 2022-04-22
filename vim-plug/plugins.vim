@@ -1,6 +1,7 @@
 call plug#begin('~/AppData/Local/nvim/plugged')
 
 Plug 'lifepillar/vim-gruvbox8'
+Plug 'akinsho/toggleterm.nvim'
 
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'

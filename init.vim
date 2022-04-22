@@ -13,3 +13,4 @@ source ~/AppData/Local/nvim/comp/cp.vim
 "lua require 'init'
 "lua require 'clangd'
 "lua require 'treesitter'
+lua require 'toggleterm'

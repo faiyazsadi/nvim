@@ -1,5 +1,5 @@
 "Snippets
-nnoremap <leader>cpp :-1read ~\\AppData\\Local\\nvim\\snippets\\main.cpp<CR>:w<CR>8jma3jo
+nnoremap <leader>cpp :-1read ~\\AppData\\Local\\nvim\\snippets\\main.cpp<CR>:w<CR>3jmaGdd3ko
 nnoremap <leader>com :-1read ~\\AppData\\Local\\nvim\\snippet\\template.cpp<CR>45j
 
 augroup templates
